@@ -1,0 +1,183 @@
+body {
+  background: #67679171;
+  color: #16164e;
+  display: flex;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0 .75rem;
+  position: relative;
+}
+
+#navbar {
+  flex: 2;
+  background: #fff;
+  border-right: 2px dotted #16164e;
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+#navbar ul li {
+  background: #67679171;
+  padding: 1rem .5rem;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 5px  5px  5px rgba(0, 0, 0, .5);
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+  
+    display: block;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+  }
+  
+  nav {
+    height: 120px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: #080827;
+    padding-left: .5rem;
+    
+  }
+  
+  nav .nav-header {
+    color: #d6cfe0cb;;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  nav ul li   {
+    padding: 1rem .2rem;
+    background:#d6cfe0cb;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 1);
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  #main-doc {
+    position: absolute;
+    top: 120px;
+    /* padding: .5rem; */
+    z-index: -10;
+  }
+
+
+}
+
+
+#main-doc {
+  flex: 5;
+  padding: 1rem;
+  position: absolute;
+  left: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+}
+
+
+.img-div {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 95%;
+  height: auto;
+  
+}
+
+ul {
+  
+  margin-left: 8px;
+  padding-left: 0;
+}
+
+
+ul li {
+  margin: .5rem 0;
+}
+
+
+
+a {
+  text-decoration: none;
+  color:  #0e2431;
+  
+}
+
+.has-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+}
+
+
+
+
+
+
+
+
+code {
+  display: block;
+  background: #16164e;
+  color: rgb(255, 255, 0);
+  width: 60%;
+  padding: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000007;
+  line-height: 1.9;
+}
+
+.section-body p {
+  margin: 1.5rem 0;
+  text-align-last: left;
+  padding-left: 0;
+  padding-right: 2rems;
+  line-height: 1.5;
+}
+
+h3 {
+  background: #000;
+  width: fit-content;
+  color: #fff;
+}
+
